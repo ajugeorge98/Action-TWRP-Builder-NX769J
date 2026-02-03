@@ -205,6 +205,6 @@ jobs:
         body: |
           Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
           Device: OnePlus 12 (Waffle)
-          Target: Android 14/Android 15
+          Target: Android 14/Android 15/Android 16
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
