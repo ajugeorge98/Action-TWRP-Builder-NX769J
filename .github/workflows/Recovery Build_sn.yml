@@ -203,8 +203,8 @@ jobs:
         name: PBRP-${{ env.TIMESTAMP }}-Testing
         tag_name: ${{ env.TIMESTAMP }}-Testimg
         body: |
-          Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }}
-          Device: OnePlus 12 (Waffle)
+          Manifest: ${{ github.event.inputs.MANIFEST_BRANCH }} - ${{ github.event.inputs.DEVICE_NAME }}
+          Device: RedMagic 9S Pro/9 Pro
           Target: Android 14/Android 15/Android 16
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
